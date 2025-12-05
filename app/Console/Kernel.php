@@ -15,7 +15,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        // Check for popular people every hour
+        $schedule->command('people:check-popular')->hourly();
     }
 
     /**

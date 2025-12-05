@@ -115,4 +115,16 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Email
+    |--------------------------------------------------------------------------
+    |
+    | This email address will receive admin notifications, such as when
+    | a person becomes popular (receives more than 50 likes).
+    |
+    */
+
+    'admin_email' => env('MAIL_ADMIN_EMAIL', 'admin@example.com'),
+
 ];
